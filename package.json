@@ -2,11 +2,11 @@
 	"license": "MIT",
 	"author": "Paul Williams",
 	"version": "0.1.0",
-	"name": "@paulio/TODO-TODO-js",
-	"description": "TODO",
+	"name": "@paulio/embed-js",
+	"description": "P104: Replicating Go struct embedding.",
 	"keywords": [
-		"TODO",
-		"TODO"
+		"javascript",
+		"embedding"
 	],
 	"type": "module",
 	"engines": {
@@ -14,11 +14,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/PaulioRandall/TODO-TODO-js.git"
+		"url": "https://github.com/PaulioRandall/p104-embed-js.git"
 	},
-	"main": "src/index.js",
+	"main": "src/embed.js",
 	"exports": {
-		".": "./src/index.js"
+		".": "./src/embed.js"
 	},
 	"scripts": {
 		"fmt": "prettier --log-level warn --write .",
