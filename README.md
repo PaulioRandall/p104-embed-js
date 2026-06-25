@@ -1,3 +1,7 @@
+![Made to be Plundered](https://img.shields.io/badge/Made%20to%20be%20Plundered-royalblue)
+[![Latest version](https://img.shields.io/github/v/release/PaulioRandall/p104-embed-js)](https://github.com/PaulioRandall/p104-embed-js/releases)
+[![Release date](https://img.shields.io/github/release-date/PaulioRandall/p104-embed-js)](https://github.com/PaulioRandall/p104-embed-js/releases)
+
 # P104: Embed
 
 Minimalist function for replicating [Go struct embedding](https://gobyexample.com/struct-embedding).
