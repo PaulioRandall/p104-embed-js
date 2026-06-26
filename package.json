@@ -16,9 +16,9 @@
 		"type": "git",
 		"url": "https://github.com/PaulioRandall/p104-embed-js.git"
 	},
-	"main": "src/embed.js",
+	"main": "src/index.js",
 	"exports": {
-		".": "./src/embed.js"
+		".": "./src/index.js"
 	},
 	"scripts": {
 		"fmt": "prettier --log-level warn --write .",

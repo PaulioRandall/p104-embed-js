@@ -1,20 +1,42 @@
+![Made to be Plundered](https://img.shields.io/badge/Made%20to%20be%20Plundered-royalblue)
+[![Latest version](https://img.shields.io/github/v/release/PaulioRandall/p104-embed-js)](https://github.com/PaulioRandall/p104-embed-js/releases)
+[![Release date](https://img.shields.io/github/release-date/PaulioRandall/p104-embed-js)](https://github.com/PaulioRandall/p104-embed-js/releases)
+
 # P104: Embed
 
 Minimalist function for replicating [Go struct embedding](https://gobyexample.com/struct-embedding).
 
 Embedding is a form of polymorphism and an alternative to both inheritance and mixins. I'd say the approach lies somewhere between inheritance and mixins in terms of flexibility, complexity, and error proneness.
 
-## Usage
+**API Documentation is in _[/src](./src)_.**
 
-> API Documentation is in the source: _[/src](./src)_.
+## Import from NPM
 
-_Copy+paste_ files from _[/src](./src)_ into your project. Tests are written in [Jest](https://jestjs.io/) but easy to adapt or rewrite for your framework.
+**package.json**
 
-## Example
+```json
+{
+	"dependencies": {
+		"@paulio/embed-js": "0.1.0"
+	}
+}
+```
 
-**Simple Example**
+**my-script.js**
 
-A more detailed example can be found at [./Example.js](./Example.js).
+```js
+import embed from '@paulio/embed-js'
+
+// ...
+```
+
+## Copy & Paste Code
+
+_Copy & paste_ files from _[/src](./src)_ into your project. Tests are written in [Jest](https://jestjs.io/) but should be easy to adapt or rewrite for whatever testing framework.
+
+## Simple Example
+
+A more detailed example can be found at [./examples/Example.js](./examples/Example.js).
 
 ```js
 import embed from '@paulio/embed-js'
@@ -46,7 +68,7 @@ class WithAge {
 }
 
 // Derived class.
-class Person extends Embed(WithName, WithAge) {
+class Person extends embed(WithName, WithAge) {
 	constructor(name, age) {
 		this.setName(name)
 		this.age = age
@@ -58,4 +80,10 @@ class Person extends Embed(WithName, WithAge) {
 
 	// ...
 }
+
+const person = new Person('Oliver', 24)
+person.setName('Bob')
+person.age = 42
+
+console.log(person.getName(), person.age)
 ```

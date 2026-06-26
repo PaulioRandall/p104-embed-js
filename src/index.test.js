@@ -1,4 +1,4 @@
-import embed from './embed.js'
+import embed from './index.js'
 
 class A {
 	_a = 'alpha'
