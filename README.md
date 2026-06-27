@@ -8,7 +8,7 @@ Minimalist function for replicating [Go struct embedding](https://gobyexample.co
 
 Embedding is a form of polymorphism and an alternative to both inheritance and mixins. I'd say the approach lies somewhere between inheritance and mixins in terms of flexibility, complexity, and error proneness.
 
-**API Documentation is in _[/src](./src)_.**
+**API Documentation in _[/src](./src)_.**
 
 ## Import from NPM
 
@@ -30,7 +30,7 @@ import embed from '@paulio/embed-js'
 // ...
 ```
 
-## Copy & Paste Code
+## Made to be Plundered
 
 _Copy & paste_ files from _[/src](./src)_ into your project. Tests are written in [Jest](https://jestjs.io/) but should be easy to adapt or rewrite for whatever testing framework.
 
